@@ -79,21 +79,4 @@ void flashLed(int pin, int times, int delayTime) {
     delay(delayTime);
     digitalWrite(pin, LOW);
     delay(delayTime);
-  }
-}
-
-void successSignal() {
-  digitalWrite(greenLed, HIGH);
-  tone(buzzer, 1000);
-  delay(200);
-  noTone(buzzer);
-  digitalWrite(greenLed, LOW);
-}
-
-void errorSignal() {
-  digitalWrite(redLed, HIGH);
-  tone(buzzer, 400);
-  delay(1000);
-  noTone(buzzer);
-  digitalWrite(redLed, LOW);
-}
+ 
